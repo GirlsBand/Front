@@ -1,0 +1,150 @@
+$height: 400px;
+$footerHeight: 80px;  
+.FormPage{
+  select {
+    padding: 10px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    outline: none;
+  }
+
+  &_Header {
+    background: url('./assets/header.png') center no-repeat;
+    height: $height;
+    width:100%;
+    &_Nav {
+      color: #fff;
+      padding: 30px 25px 0;
+      font-size: 24px;
+      position: absolute;
+      right: 0;
+      > a {
+        margin: 0 40px;
+      }
+    }
+
+    &_Container {
+      clear: both;
+      font-weight: bold;
+      color: #fff;
+      line-height: 130%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 36px;
+      height: 100%;
+    }
+  }
+  &_Main-Container{
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    &_Wrapper{
+      width: 80%;
+    }
+    &_Question{
+      margin:30px 0;
+      &_Title{
+        font-size: 22px;
+        font-weight: bold;
+        padding: 0;
+      }
+      &_Variants{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    &_Submit{
+      float: right;
+      margin: 40px 0;
+      width: 200px;
+      height: 60px;
+      color: #FFF;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 60px;
+      text-align: center;
+      border-radius:5px; 
+      background-color: #DEBA4D;
+    }
+    &_Input{
+      outline: none;
+      user-select: none;
+      box-sizing: border-box;
+      width: 50%;
+      height: 40px;
+      display: block;
+      margin: 16px 0;
+      padding: 10px;
+      border: 2px solid rgb(224, 224, 224);;
+      border-radius: 5px;
+    }
+    &_Footer{
+      background-color: #A8A5A5;
+      height:$footerHeight ;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &_Nav {
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+  @media(max-width: 1200px){
+    $height: 200px;
+    select {
+      padding: 5px;
+      height: 30px;
+    }
+  
+    &_Header {
+      
+      height: $height;
+      &_Nav {
+        padding: 15px 10px 0;
+        font-size: 16px;
+        > a {
+          margin: 0 20px;
+        }
+      }
+  
+      &_Container {
+        line-height: 130%;
+        font-size: 19px;
+        height: 100%;
+      }
+    }
+    &_Main-Container{
+      margin: 0;
+
+      &_Question{
+        &_Title{
+          font-size: 13px;
+          padding: 7px 0;
+        }
+      }
+      &_Submit{
+        margin: 10px 0;
+        width: 100px;
+        height: 35px;
+        font-size: 15px;
+        line-height: 35px;
+      }
+      &_Input{
+        height: 30px;
+        padding: 5px;
+        margin: 0;
+      }
+
+    }
+  }
+}

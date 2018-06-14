@@ -1,0 +1,95 @@
+.ApartmentsPage_Footer {
+  position: relative;
+  background-color: #A8A5A5;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .ApartmentsPage_Footer_Nav {
+    color: #fff;
+    font-size: 16px;
+    text-align: center; }
+
+.ApartmentsPage_Feedback {
+  color: #fff;
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold; }
+
+.ApartmentsPage_Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+  background: url("../assets/new-york-city-wallpaper-3.png") center no-repeat; }
+
+.ApartmentsPage_Content {
+  margin: 40px 80px; }
+  .ApartmentsPage_Content_Row {
+    display: flex;
+    margin: 40px 0; }
+  .ApartmentsPage_Content_Column {
+    flex: 0.5;
+    padding: 0 20px 0 0; }
+    .ApartmentsPage_Content_Column:nth-of-type(2n) {
+      padding: 0 0 0 20px; }
+
+.ApartmentsPage_Info {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center; }
+
+.ApartmentsPage_Control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto 20px; }
+  .ApartmentsPage_Control > span {
+    font-weight: bold;
+    margin-right: 20px; }
+  .ApartmentsPage_Control > div {
+    width: 400px;
+    margin: 4px 20px 0; }
+  .ApartmentsPage_Control > button {
+    cursor: pointer;
+    margin-left: 20px; }
+
+.ApartmentsPage_List {
+  overflow-y: scroll;
+  height: 600px; }
+  .ApartmentsPage_List_Item {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ebebeb;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none; }
+    .ApartmentsPage_List_Item:first-of-type {
+      margin-top: 0; }
+    .ApartmentsPage_List_Item:nth-of-type(2n) {
+      background: #fff; }
+    .ApartmentsPage_List_Item > div {
+      display: flex;
+      padding: 5px 0; }
+      .ApartmentsPage_List_Item > div > span {
+        flex: 0.8; }
+        .ApartmentsPage_List_Item > div > span:nth-of-type(2n-1) {
+          flex: 0.2;
+          font-weight: bold; }
+    .ApartmentsPage_List_Item__selected:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: #ea4335; }

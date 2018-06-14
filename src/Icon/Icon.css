@@ -1,0 +1,6 @@
+.Icon {
+  display: inline-flex;
+  user-select: none; }
+  .Icon.check {
+    opacity: 1;
+    transition: opacity 0.3s linear; }

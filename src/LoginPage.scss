@@ -1,0 +1,171 @@
+$height: 400px;
+$masonryHeight: 600px;
+$footerHeight: 80px;
+$loginMargin: 20px;
+
+.LoginPage {
+  &_Wrapper {
+    position: relative;
+
+    margin: 0 auto;
+}
+
+  &_Header {
+    background: url('./assets/new-york-city-wallpaper-3.png') center no-repeat;
+    height: $height;
+    &_Nav {
+      color: #fff;
+      padding: 30px 25px 0;
+      font-size: 24px;
+      position: absolute;
+      right: 0;
+      > a {
+        margin: 0 40px;
+      }
+    }
+
+    &_Container {
+      clear: both;
+      font-weight: bold;
+      color: #fff;
+      line-height: 130%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      height: 100%;
+    }
+  }
+
+  .FbButton {
+    margin: $loginMargin 0;
+    > div {
+      pointer-events: none;
+      font-size: 30px!important;
+    }
+  }
+
+
+  &_Login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &_Title{
+    font-size: 46px;
+    margin:$loginMargin 0;
+
+  }
+
+  &_Text{
+    &_Paragraph{
+      margin:$loginMargin 0;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+
+
+  .Masonry {
+    &_Layout {
+      display: flex;
+      flex-direction: row;
+      height: $masonryHeight;
+    }
+
+    &_Panel-Left {
+      width:35%;
+    }
+
+    &_Panel-Right {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width:65%;
+    }
+
+    &_Block {
+      display: flex;
+      flex-direction: row;
+      height:50%;
+
+    }
+  }
+
+  &_Footer{
+    background-color: #A8A5A5;
+    height:$footerHeight ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_Nav {
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+
+  @media(max-width: 1200px){
+    &_Login{
+      padding: 20px 0;
+    }
+    &_Header {
+      height: 200px;
+      &_Nav {
+        padding: 15px 10px 0;
+        font-size: 14px;
+        > a {
+          margin: 0 20px;
+        }
+      }
+
+      &_Container {
+        font-size: 19px;
+        >p{
+          line-height: 25px;
+        }
+
+      }
+    }
+
+    .FbButton {
+      > div {
+        font-size: 15px!important;
+      }
+    }
+
+    &_Title{
+      font-size: 23px;
+      margin:$loginMargin/2 0 0;
+    }
+
+    &_Text{
+      &_Paragraph{
+        margin:$loginMargin/2 0;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+
+
+    .Masonry {
+      &_Layout {
+        height: $masonryHeight/2;
+      }
+    }
+
+    &_Footer{
+      height:$footerHeight/2 ;
+
+      &_Nav {
+        font-size: 14px;
+
+        > a {
+          margin: 0 25px;
+        }
+      }
+    }
+  }
+}
